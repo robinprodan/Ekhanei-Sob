@@ -1,0 +1,219 @@
+/* top navbar */
+.navTop {
+  background: #4CAF50;
+  color: #fff;
+  max-height: 56px;
+  padding-left: 0px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navTop ul {
+  margin-right: 2rem;
+}
+.navTop a {
+  color: #fff;
+}
+.navbar-brand {
+  font-family: 'Niconne', cursive;
+  font-size: 28px;
+  width: 230px;
+  background: #4CAF50;
+  text-align: center;
+  height: 56px;
+  z-index: 1;
+}
+.brndHide {
+  font-family: 'Niconne', cursive;
+  font-size: 28px;
+  display: none;
+}
+.brndHide:hover {
+  text-decoration: none;
+}
+.navIcon i {
+  font-size: 19px;
+  margin-left: 12px;
+}
+.navbar-toggler {
+  display: block !important;
+  margin-right: 1rem;
+}
+.navbar-toggler i {color: #fff;}
+.profileDrop {
+  top: 109%;
+  right: 0;
+  left: auto;
+  box-shadow: 0px 1px 5px 1px #c1c1c1;
+}
+.profileDrop a {
+  color: #16181B;
+}
+.dropdown-item:active {
+  background: #fff;
+  color: #000;
+}
+
+/* side nav */
+.sideMenu {
+  width: 0px;
+  z-index: 1;
+  background: #F7F9F6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  padding-top: 70px;
+  overflow: auto;
+  transition: left 0.3s ease,
+    width 0.3s ease;
+  box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
+}
+.sideMenu::-webkit-scrollbar {
+  width: 0;
+}
+.sideTop {
+  padding: 10px 10px 22px;
+  display: flex;
+}
+.sideTop img {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  border-radius: 50%;
+  height: fit-content;
+}
+.sideTop p {
+  margin-bottom: 0;
+}
+.sideBottom a {
+  color: #323431;
+}
+.sideBottom ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sideBottom a {
+  text-decoration: none;
+  border-left: 3px solid #F7F9F6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  font-size: 1.03em;
+}
+.sideBottom .arrwRght {
+  width: 0;
+}
+.sideTop .name {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+}
+.sideTop .desg {
+  letter-spacing: -0.25px;
+  font-size: 15px;
+}
+.sideBottom a i {
+  width: 25px;
+  flex: 0 0 auto;
+}
+.sideBottom a:hover, .aActive {
+  background: #efecec;
+  border-color: #4CAF50;
+}
+
+/* app content */
+.appContent {
+  background: #E5E5E5;
+  min-height: calc(100vh - 50px);
+  margin: 50px 0 0 0px;
+  padding: 60px 40px;
+  transition: margin-left 0.3s ease;
+}
+.appContent .formSubmit {
+  padding: 7px 30px;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: #fff;
+}
+
+/* restaurant admin login start */
+.login-res-admin {
+  margin: 15vh 0;
+}
+
+.login-res-admin a {
+  color: #4CAF50;
+}
+
+.login-res-admin .logo {
+  text-align: center;
+}
+
+.login-res-admin .logo img {
+  width: 80px;
+  height: auto;
+}
+
+.login-res-admin .logo h5 {
+  margin: 16px 0;
+}
+
+.login-res-admin .full-login {
+  width: 40%;
+  margin: 0 auto;
+  background: #E5E5E5;
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+}
+
+.login-res-admin form {
+  margin: 2rem 0;
+}
+
+.login-res-admin .submit-btn {
+  color: #fff;
+  background: #4CAF50;
+}
+
+.login-res-admin .submit-btn:hover {
+  box-shadow: none;
+}
+
+/* restaurant admin login end */
+
+@media (min-width: 767px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+  #sideMnu {
+    width: 230px ;
+    z-index: 1;
+  }
+  #appcontnt {
+    margin-left: 230px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 0rem !important;
+    z-index: 100;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .brndHide {
+    display: block;
+  }
+  /* login */
+  .login-res-admin .full-login {
+    width: 90%;
+}
+}
+@media (max-width: 575px) {
+
+}
